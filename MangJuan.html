@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Far Eastern University</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+body{
+background:#f4f4f4;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+header{
+background:#006633;
+color:white;
+text-align:center;
+padding:20px;
+}
+nav{
+background:#0b8f4d;
+}
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+nav ul li{
+padding:15px 25px;
+}
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+nav ul li:hover{
+background:#00552b;
+}
+.container{
+display:flex;
+gap:20px;
+padding:20px;
+flex:1;
+}
+.main{
+flex:3;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+.sidebar{
+flex:1;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+footer{
+background:#006633;
+color:white;
+text-align:center;
+padding:15px;
+}
+@media (max-width:768px){
+.container{
+flex-direction:column;
+}
+nav ul{
+flex-wrap:wrap;
+}
+}
+@media (max-width:480px){
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+nav ul li{
+border-bottom:1px solid rgba(255,255,255,0.3);
+}
+header h1{
+font-size:24px;
+}
+.main,
+.sidebar{
+padding:15px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Far Eastern University (FEU)</h1>
+<p>Responsive Web Design</p>
+</header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About FEU</a></li>
+<li><a href="#">Programs</a></li>
+<li><a href="#">Admissions</a></li>
+</ul>
+</nav>
+<div class="container">
+<div class="main">
+<h2>Main Content area</h2>
+<h2>About FEU</h2>
+<br>
+<p>
+Far Eastern University (FEU) is one of the leading private universities
+in the Philippines. Established in 1928, FEU is recognized for its
+commitment to academic excellence, innovation, and student development.
+The university offers a wide range of undergraduate and graduate
+programs in fields such as business, education, engineering,
+architecture, nursing, medicine, and information technology.
+</p>
+<br>
+<p>
+FEU's historic Manila campus is known for its beautiful Art Deco
+architecture and vibrant learning environment. The university promotes
+leadership, community service, and holistic growth, preparing students
+to become competent professionals and responsible citizens.
+</p>
+</div>
+<div class="sidebar">
+<h2>sidebar</h2>
+<h2>Quick Facts</h2>
+<br>
+<ul>
+<li> Founded: 1928</li>
+<li> Location: Manila, Philippines</li>
+<li> Mascot: Tamaraw</li>
+<li> School Colors: Green and Gold</li>
+<li> Type: Private University</li>
+</ul>
+<br>
+</ul>
+</div>
+</div>
+<footer>
+<p>&copy; 2026 Far Eastern University | Responsive Web Design Activity</p>
+</footer>
+</body>
+</html>
